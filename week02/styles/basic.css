@@ -1,0 +1,22 @@
+nav{
+     background-colour: darkblue;
+Padding:10px;
+}
+    nav a{
+        color:white;
+        Display:block;
+        Padding:20px;
+    }
+h1{
+    color:darkkblue;
+}
+image{
+    width:150px;
+    height:auto;
+    border:1px solid black;
+    padding:2px;
+    box-shadow:0 0 30px;
+}
+p{
+    padding:10px;
+}
