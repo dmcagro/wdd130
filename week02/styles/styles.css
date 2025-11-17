@@ -1,3 +1,8 @@
+:root{
+   --padding: 20px;
+   --text-align: center;
+
+}
 header{
      background-color: darkblue;
      padding: 10px;
@@ -5,7 +10,7 @@ header{
  nav a {
     color:white;
     display: block;
-    padding: 20px;
+    padding:var(--padding);
     }
  h1 {
     color:darkblue;
@@ -26,7 +31,7 @@ header{
     border: 1px solid rgd(0 0 0 /0.2);/*1*/
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--text-align);
 }
  aside img {
     width: 200px;
@@ -38,5 +43,5 @@ header{
 footer{
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: var(--text-align);
  }
