@@ -78,19 +78,22 @@ nav a:hover {
   font-family: var(--heading-font);
 }
 
-.hero-article {
+.hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: rgba(255,255,255,0.85);
-  padding: 10px;
-  border-radius: 8px;
+  background: rgba(0,0,0,0.4);
+  padding: 1rem;
+  color: #fff;
+  border-radius: 6px;
 }
 
-.hero-article img {
-  width: 125px;
+
+.hero article img {
   float: right;
-  margin-left: 8px;
+  width: 125px;
+  margin-left: 1rem;
+  border-radius: 6px;
 }
 
 
@@ -138,6 +141,7 @@ figure {
 
 footer {
   background-color: var(--secondary-color);
+  background-color: var(--accent2-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
