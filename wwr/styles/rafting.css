@@ -73,9 +73,9 @@ nav a:hover {
   width: 100%;
   text-align: center;
   padding: 16px;
-  background-color: rgba(38, 70, 83, 0.8);
+  background-color: var(--accent1-color);
   color: #fff;
-  font-family: var(--heading-font);
+  opacity:0.7;
 }
 
 .hero article {
@@ -83,7 +83,7 @@ nav a:hover {
   bottom: 20px;
   left: 20px;
   background: rgba(0,0,0,0.4);
-  padding: 1rem;
+  padding: 1rem ;
   color: #fff;
   border-radius: 6px;
 }
@@ -94,7 +94,7 @@ nav a:hover {
   width: 125px;
   margin-left: 1rem;
   border-radius: 6px;
-}
+  }
 
 
 .history {
