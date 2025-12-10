@@ -50,26 +50,38 @@
             <!-- CONTACT FORM -->
             <form class="contact-form">
 
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name" required>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Your email" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
 
-                <p>Message Purpose</p>
-                <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                <p>How did you hear about us?</p>
 
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Type here"></textarea>
-
-                <label>
-                    <input type="checkbox"> Please subscribe me to the monthly newsletter
+                <label for="option1">
+                    <input type="radio" id="option1" name="source" value="website">
+                    Website
                 </label>
 
-                <button type="submit">Get in Touch!</button>
+                <label for="option2">
+                    <input type="radio" id="option2" name="source" value="social">
+                    Social Media
+                </label>
 
+                <label for="option3">
+                    <input type="radio" id="option3" name="source" value="friend">
+                    Friend
+                </label>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Subscribe to our newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
             </form>
 
         </section>
@@ -81,18 +93,18 @@
             <div class="employee-container">
 
                 <figure>
-                    <img src="images/employee1.jpg" alt="Employee 1">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee1.png" alt="Employee 1">
+                    <figcaption>Bliss Edward</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee2.jpg" alt="Employee 2">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee2.png" alt="Employee 2">
+                    <figcaption>Susan Sandra</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee3.jpg" alt="Employee 3">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee3.png" alt="Employee 3">
+                    <figcaption>George Date</figcaption>
                 </figure>
 
             </div>
