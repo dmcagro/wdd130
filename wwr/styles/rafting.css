@@ -226,3 +226,45 @@ background-color: var(--accent2-color);
     object-fit: cover;
     border-radius: 6px;
 }
+
+/* HERO (index) */
+.hero-wrap { position: relative; }
+.hero-wrap .hero { width: 100%; height: 420px; object-fit: cover; display:block; }
+.hero-heading {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  color: #fff;
+  max-width: 560px;
+  background: rgba(0,0,0,0.35);
+  padding: 18px;
+  border-radius: 6px;
+}
+.cta-hero { display:inline-block; margin-top:10px; background:#fff; color:#003366; padding:10px 14px; text-decoration:none; font-weight:700; border-radius:4px; }
+
+/* Grid on index */
+.intro-grid .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-top:18px; }
+.card img { width:100%; height:180px; object-fit:cover; border-radius:6px; }
+.card h3 { margin-top:8px; color:#003366; }
+
+/* Newsletter */
+.newsletter { background:transparent; padding:20px 0; }
+.newsletter-form { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.newsletter-form label { width:100%; max-width:120px; }
+.newsletter-form input { padding:8px; border-radius:6px; border:1px solid #ccc; }
+
+/* Trips cards */
+.trip-cards { display:grid; grid-template-columns: repeat(3,1fr); gap:20px; margin-top:18px; }
+.trip img { width:100%; height:180px; object-fit:cover; border-radius:6px; }
+.book-link { display:inline-block; margin-top:10px; color:#003366; font-weight:700; text-decoration:none; }
+
+/* Table responsiveness */
+.table-wrap { overflow-x:auto; margin-top:12px; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:10px; border:1px solid #ddd; text-align:left; }
+
+/* Responsive: stack grids on small screens */
+@media (max-width:900px) {
+  .intro-grid .grid, .trip-cards { grid-template-columns: 1fr; }
+  .hero-wrap .hero { height:260px; }
+}
