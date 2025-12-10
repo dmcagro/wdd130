@@ -231,3 +231,295 @@ background-color: var(--accent2-color);
     object-fit: cover;
     border-radius: 6px;
 }
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f7fa;
+    padding-bottom: 50px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 120px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- COMPANY INFO ---------- */
+.company-info {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.company-info h1 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+/* ---------- CONTACT GRID (MAP + FORM) ---------- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* MAP */
+.map-container iframe {
+    width: 100%;
+    height: 380px;
+    border: 0;
+    border-radius: 6px;
+    background: #eee;
+}
+
+/* ---------- FORM ---------- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contact-form button:hover {
+    background-color: #0050a1;
+}
+
+;/* ---------- EMPLOYEES SECTION ---------- */
+.employees {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.employees h2 {
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.employee-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.employee-container figure {
+    text-align: center;
+}
+
+.employee-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #003366;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: 600
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) 
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-container {
+        flex-direction: column;
+    }
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description"
+        content="Contact Rafting Adventures for inquiries, reservations, customer support, and trip information.">
+    <meta name="author" content="Olusola Onoja">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="images/z-wwr-oars.png" alt="Rafting site logo" class="logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- COMPANY INFORMATION -->
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </section>
+
+        <!-- MAP + FORM GRID -->
+        <section class="contact-grid">
+
+            <div class="map-container">
+                <iframe src="YOUR GOOGLE MAP IFRAME HERE" loading="lazy">
+                </iframe>
+            </div>
+
+            <form class="contact-form">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+
+                <p>Message Purpose</p>
+                <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Type here"></textarea>
+
+                <label>
+                    <input type="checkbox"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+
+            </form>
+
+        </section>
+
+        <!-- EMPLOYEES SECTION -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-container">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>©2025 White Water Rafting Adventures</p>
+
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com" target="_blank" aria-label=""> <img src="images/linkedin.jpg"
+                    alt="Connect with us on LinkedIn"> </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label=""> <img src="images/instagram.jpg"
+                    alt="Follow us on Instagram"> </a>
+            <a href="https://www.whatsapp.com" target="_blank" aria-label=""> <img src="images/whatsapp.jpg"
+                    alt="Chat with us on WhatsApp"> </a>
+            </nav>
+    </footer>
+
+</body>
+
+</html>

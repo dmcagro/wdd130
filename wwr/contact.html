@@ -8,7 +8,7 @@
     <meta name="description"
         content="Contact Rafting Adventures for inquiries, reservations, customer support, and trip information.">
     <meta name="author" content="Olusola Onoja">
-    <link rel="stylesheet" href="rafting.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <main>
 
         <!-- COMPANY INFORMATION -->
@@ -40,17 +40,21 @@
         <section class="contact-grid">
 
             <div class="map-container">
-                <iframe src="YOUR GOOGLE MAP IFRAME HERE" loading="lazy">
+                <!-- Replace with your Google Maps iframe -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094534!2d144.95565131568543!3d-37.8173239797519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f2c1b1b7%3A0x5045675218cee17!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1614035086677!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
 
+            <!-- CONTACT FORM -->
             <form class="contact-form">
 
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="name" placeholder="Your name" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Your email">
+                <input type="email" id="email" placeholder="Your email" required>
 
                 <p>Message Purpose</p>
                 <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
@@ -70,11 +74,12 @@
 
         </section>
 
-        <!-- EMPLOYEES SECTION -->
+        <!-- EMPLOYEES -->
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
 
             <div class="employee-container">
+
                 <figure>
                     <img src="images/employee1.jpg" alt="Employee 1">
                     <figcaption>Employee Profile</figcaption>
@@ -89,6 +94,7 @@
                     <img src="images/employee3.jpg" alt="Employee 3">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
+
             </div>
         </section>
 
@@ -99,13 +105,10 @@
         <p>©2025 White Water Rafting Adventures</p>
 
         <div class="socialmedia">
-            <a href="https://www.linkedin.com" target="_blank" aria-label=""> <img src="images/linkedin.jpg"
-                    alt="Connect with us on LinkedIn"> </a>
-            <a href="https://www.instagram.com" target="_blank" aria-label=""> <img src="images/instagram.jpg"
-                    alt="Follow us on Instagram"> </a>
-            <a href="https://www.whatsapp.com" target="_blank" aria-label=""> <img src="images/whatsapp.jpg"
-                    alt="Chat with us on WhatsApp"> </a>
-            </nav>
+            <a href="#" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="#" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="images/whatsapp.jpg" alt="WhatsApp"></a>
+        </div>
     </footer>
 
 </body>
